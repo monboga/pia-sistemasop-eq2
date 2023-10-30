@@ -12,37 +12,61 @@
     <script src="https://kit.fontawesome.com/65caae80ff.js" crossorigin="anonymous"></script>
 </head>
 <body class="vh-100 overflow-hidden">
-    <header class="header">
-        <div class="container vh-50">
-            <!--Navbar-->
-            <nav class="row text-white justify-content-between align-items-center text-uppercase pt-4">
-                <!--Logo-->
-                <a href="" class="col-auto text-reset text-decoration-none">
-                    <img src="img/Windows 11.png" alt="" class="img-logo"> Windows 11
-                </a>
-                <!--Enlaces-->
-                <div class="col-auto">
-                    <a href="#" class="text-reset text-decoration-none">Producto integrador de aprendizaje</a>
+    <div class="wrapper">
+        <!--SideBar-->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">
+                        <img src="img/Windows 11.png" alt="" class="img-logo">
+                        Sistemas Operativos
+                    </a>
                 </div>
-            </nav>
-            <!--Descripcion-->
-            <div class="row h-100 align-items-center">
-                <div class="col-6 text-white">
-                    <h1 class="text-capitalize">
-                        <span class="text-info text-uppercase h5">sistemas operativos<br></span> 
-                        equipo 2 
-                    </h1>
+                <!--Navegacion de tabla de contenido-->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        producto integrador de aprendizaje
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            introduccion
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="pages" aria-expanded="false" aria-controls="pages">
+                            <i class="fa-regular fa-file-lines"></i>
+                            windows 11
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">¿Que es?</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Historia</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link"></a>
+                            </li>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nam cum aperiam qui sunt reiciendis ex magnam esse architecto natus.
-                    </p>
-
-                    <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
+                        </ul>
+                    </li>
+                </ul>
             </div>
+        </aside>
+        <!--Componentes principales-->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!--Boton de hamburguesa-->
+                <button class="btn" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
         </div>
-    </header>
+    </div>
     <!--Bootstrap de javascript-->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Script-->
+    <script src="js/script.js"></script>
 </body>
 </html>
