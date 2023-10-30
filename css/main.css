@@ -8,6 +8,16 @@ body
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .img-logo {
@@ -16,4 +26,63 @@ body
 
 .vh-50 {
     height: 50vmin;
+}
+
+
+/* Esqueleto del menu */
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    max-width: 264px;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+}
+
+/* colapso del menu lateral */
+#sidebar.collapsed {
+
+    margin-left: -264px;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+.sidebar-logo {
+    padding: 1.15rem 1.5rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    padding:0;
+}
+
+.sidebar-header {
+    color: #e9ecef;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    padding: 1.5rem 1.5rem 0.375rem;
+}
+
+a.sidebar-link {
+    padding: 0.625rem 1.625rem;
+    color: #e0ecef;
+    position: relative;
+    display: block;
+    font-size: 1rem;
 }
