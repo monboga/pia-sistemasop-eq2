@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-body
+.main
 {
-    background: url(/img/bg-header.png) rgba(0,0,0,0.3);
+    background: url('../img/bg-header.png') rgba(0,0,0,0.3);
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
@@ -42,6 +42,7 @@ li {
     transition: all 0.35s ease-in-out;
     box-shadow: 0 0 35px 0 rgba(49,57,66,0.5);
     z-index: 1111;
+    background: #06142e;
 }
 
 /* colapso del menu lateral */
@@ -59,8 +60,7 @@ li {
     overflow: hidden;
     transition: all 0.35s ease-in-out;
 }
-.content {
-    font-size: 1.2375rem;
+.main p {
     color: #fff;
 }
 .sidebar-logo {
