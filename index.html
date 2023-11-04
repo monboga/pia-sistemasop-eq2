@@ -28,12 +28,6 @@
                         producto integrador de aprendizaje
                     </li>
                     <li class="sidebar-item">
-                        <a href="" class="sidebar-link text-capitalize">
-                            <i class="fa-solid fa-list pe-2"></i>
-                            introduccion
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#windows11" aria-expanded="false" aria-controls="windows11">
                             <i class="fa-brands fa-windows pe-2"></i>
                             windows 11
@@ -106,20 +100,22 @@
             </div>
         </aside>
         <!--Componentes principales-->
-        <div class="main">
-            <nav class="navbar navbar-expand px-3 border-bottom">
+        <div class="container main">
+            <nav class="row navbar navbar-expand px-3 border-bottom">
                 <!--Boton de hamburguesa-->
-                <button class="btn" type="button" data-bs-theme="dark">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="col-6">
+                    <button class="btn" type="button" data-bs-theme="dark">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
             </nav>
-            <div class="container vh-50">
-                <div class="row h-100 align-items-center">
-                    <div class="col-sm-12 col-lg-6">
-                        <h1 class="text-capitalize text-white"><span class="text-warning h5">producto integrador de aprendizaje</span><br> sistemas operativos</h1>
+            <div class="row vh-25 mt-4">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-lg-6 animated-text">
+                        <h1 class="text-capitalize text-white"><span class="text-warning h5 span"></span><br> sistemas operativos</h1>
                         <!--Descripcion-->
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti commodi omnis officiis! Voluptatem, voluptatibus nemo aliquid magnam fugiat sed est veritatis rerum dolores nulla, adipisci tenetur laborum distinctio cum!
+                            Hablaremos un poco sobre el sistema operativo <span class="text-info text-capitalize">windows 11</span>.<br>Su historia, kernell, sistemas de archivos, dispositivos de entrada y de salida y como la concurrencia se presenta en los puntos antes dichos.
                         </p>
                         <a href="#" class="btn btn-primary">Ver más</a>
                     </div>
@@ -127,6 +123,8 @@
             </div>
         </div>
     </div>
+
+
     <!--Bootstrap de javascript-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!--Script-->
