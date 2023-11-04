@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-.main
+.wrapper
 {
     background: url('../img/bg-header.png') rgba(0,0,0,0.3);
     background-position: center;
     background-size: cover;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
 }
 
 a {
@@ -31,9 +28,30 @@ li {
 
 /* Esqueleto del menu */
 .wrapper {
-    align-items: stretch;
+    /*align-items: stretch;*/
     display: flex;
     width: 100%;
+}
+
+.animated-text .span {
+    position: relative;
+}
+
+.animated-text .span::before {
+    content: "Producto Integrador de Aprendizaje";
+    animation: word 20s infinite;
+}
+
+.animated-text .span::after {
+    content: "";
+    position: absolute;
+    top:0.5px;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #0c1933;
+    border-left: 2px solid;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 20s steps(20) infinite;
 }
 
 #sidebar {
@@ -113,5 +131,39 @@ a.sidebar-link {
 @media (min-width: 768px) {
     .content {
         width: auto;
+    }
+}
+
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #06142e;
+    }
+}
+
+@keyframes word {
+    0%,20% {
+        content: "Equipo 2"
+    }
+    21%,40% {
+        content: "Producto Integrador de Aprendizaje"
+    }
+    41%,60% {
+        content: "Equipo 2"
+    }
+    61%,80% {
+        content: "Producto Integrador de Aprendizaje"
+    }
+    81%,100% {
+        content: "Equipo 2";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 8px);
     }
 }
