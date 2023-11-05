@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Integrador de Aprendizaje - v1.1</title>
+    <!--Bootrsrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/65caae80ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!--SideBar-->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="index.html">
+                        <img src="img/Windows 11.png" alt="" class="img-logo">
+                        Sistemas Operativos
+                    </a>
+                </div>
+                <!--Navegacion de tabla de contenido-->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        producto integrador de aprendizaje
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#windows11" aria-expanded="false" aria-controls="windows11">
+                            <i class="fa-brands fa-windows pe-2"></i>
+                            windows 11
+                        </a>
+                        <ul id="windows11" class="sidebar-dropdown list-unstyled collapse text-capitalize" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="windows.html" class="sidebar-link">¿Que es?</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Historia</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">CLI</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Kernell</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">sistemas de archivos</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Concurrencia</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Dispositivos E/S</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#afunda" aria-expanded="false" aria-controls="afunda">
+                            <i class="fa-solid fa-folder-open pe-2"></i>
+                            Actividades Fundamentales
+                        </a>
+                        <ul id="afunda" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/ActivdadFundamental1_EQUIPO2_COMPLETADO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 1</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/AF2-SISOP-COMPLETO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 2</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/AF3-SISOP-EQ2_COMPLETO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 3</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="act-fundamentales/AF4-SISOP-COMPLETADO.pdf" class="sidebar-link" target="_blank">Actividad Fundamental 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed text-capitalize" data-bs-toggle="collapse" data-bs-target="#conclusion" aria-expanded="false" aria-controls="conclusion">
+                            <i class="fa-solid fa-flag pe-2"></i>
+                            Conclusiones
+                        </a>
+                        <ul id="conclusion" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Conclusion General</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Conclusion individual</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link text-capitalize">
+                            <i class="fa-solid fa-user pe-2"></i>
+                            Acerca de
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!--Componentes principales-->
+        <div class="container main">
+            <nav class="row navbar navbar-expand px-3 border-bottom">
+                <!--Boton de hamburguesa-->
+                <div class="col-6">
+                    <button class="btn" type="button" data-bs-theme="dark">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <!--Componentes de card glassmorph-->
+            <div class="row vh-25 mt-4 banner">
+                <div class="col-sm-12 col-lg-6 align-items-center">
+                    <div class="animated-text card-container">
+                        <span class="text-white h5 span"></span><br> 
+                        <!--Card-->
+                        <div class="card m-2 cb1 d-flex" >
+                            <!--Cuerpo del card-->
+                            <div class="card-body text-white">
+                                <!--Titulo de la card-->
+                              <h1 class="card-title mb-4 text-capitalize">Windows 11: ¿Qué es?</h1>
+                              <!--Texto de la card-->
+                              <p class="card-text mb-4"> Hablaremos un poco sobre el sistema operativo <span class="text-primary text-capitalize">windows 11</span>.<br>Su historia, kernell, sistemas de archivos, dispositivos de entrada y de salida y como la concurrencia se presenta en los puntos antes dichos.</p>
+                              <a href="#Windows11" class="btn btn-outline-light">Ver más</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Cards informativas/seccion informativa-->
+        </div>
+    </div>
+
+
+    <!--Bootstrap de javascript-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Script-->
+    <script src="js/script.js"></script>
+</body>
+</html>
