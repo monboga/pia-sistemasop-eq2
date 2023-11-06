@@ -8,6 +8,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 a {
     cursor: pointer;
     text-decoration: none;
@@ -42,6 +43,10 @@ li {
 .cb1 {
     background-color: rgba(225,225,225,0.1);
     width: 100%;
+}
+
+.cb2 {
+    background: linear-gradient(to right bottom, rgba(225,225,255,0.5), rgba(225,225,225,0.3));
 }
 
 /* Imagenes de fondo de flip-cards*/
@@ -176,7 +181,78 @@ li {
     justify-content: center;
 }
 
+/* seccion de que es estilo */
 
+.cq1 {
+    width: 100%;
+    background-color: rgba(225,225,225,0.1);
+}
+
+.que-es-container {
+    width: 100%;
+    margin-top: 50px;
+
+
+    border: 1px solid transparent;
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5);
+    
+}
+
+.que-es {
+    width: 100%;
+    margin-top: 150px;
+
+    position: relative;
+}
+
+.content-que-es {
+    padding: 10px 38px;
+}
+
+.heading-que-es {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-que-es::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    background-color: blue;
+    width: 46px;
+    height: 2px;
+}
+
+.para-que-es {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.695);
+    line-height: 21px;
+    margin: 25px 0;
+
+}
+
+.img-que-es {
+    height: 420px;
+    width: 50%;
+    position: absolute;
+    top: -70%;
+    right: 20px;
+}
+
+.img-que-es-2 {
+    height: 420px;
+    width: 50%;
+    position: absolute;
+    top: -65%;
+    right: 610px;
+}
 
 /* Esqueleto del menu */
 .wrapper {
